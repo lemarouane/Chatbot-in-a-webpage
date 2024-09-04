@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Interact with our chatbot to get instant support and information.">
+    <title>Chatbot Interaction</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        h1, h2, p {
+            margin-bottom: 1rem;
+        }
+
+        /* Header Styling */
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 2rem;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+        }
+
+        /* Main Content Styling */
+        .main-content {
+            width: 100%;
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .main-content h2 {
+            color: #007bff;
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+
+        .main-content p {
+            font-size: 1.1rem;
+            line-height: 1.5;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .chat-widget-container {
+            width: 100%;
+            max-width: 500px;
+            height: 600px;
+            border: 2px solid #007bff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #007bff;
+            color: white;
+            width: 100%;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 3rem;
+        }
+
+        footer p {
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        footer .social-icons {
+            margin-top: 1rem;
+        }
+
+        footer .social-icons a {
+            color: white;
+            font-size: 1.5rem;
+            margin: 0 0.5rem;
+            text-decoration: none;
+        }
+
+        footer .social-icons a:hover {
+            color: #ffdd57;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            .main-content h2 {
+                font-size: 1.5rem;
+            }
+
+            footer p {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to Our Chatbot</h1>
+        <p>Get instant support and information with our AI-powered assistant.</p>
+    </header>
+
+    <!-- Main Content Section -->
+    <div class="main-content">
+        <h2>Interact with Our Chatbot Below</h2>
+        <p>Simply start typing and our bot will assist you with the information you need.</p>
+
+        <!-- Chatbot Widget Container -->
+        <div class="chat-widget-container" id="chat-container">
+            <!-- The chatbot will load here via the script -->
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Your Company. All rights reserved.</p>
+        <p>Connect with us on social media:</p>
+        <div class="social-icons">
+            <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <!-- Botpress Webchat Scripts -->
+    <script src="https://cdn.botpress.cloud/webchat/v2.1/inject.js"></script>
+    <script src="https://mediafiles.botpress.cloud/a99742bb-d7ee-4b6e-84a5-ac4d561ffa4c/webchat/v2.1/config.js"></script>
+
+</body>
+
+</html>
